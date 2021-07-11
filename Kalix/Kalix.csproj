@@ -1,0 +1,51 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<OutputType>WinExe</OutputType>
+		<TargetFramework>net5.0-windows</TargetFramework>
+		<UseWPF>true</UseWPF>
+		<Platforms>x64</Platforms>
+		<Authors>Jin Jae-yeon</Authors>
+		<Company>DARAM WORLD</Company>
+		<Description>Bitmap compression Application</Description>
+		<Copyright>Copyright ⓒ 2021 Jin Jae-yeon</Copyright>
+		<ApplicationManifest>Kalix.manifest</ApplicationManifest>
+		<ApplicationIcon>Resources\Icon.ico</ApplicationIcon>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+		<OutputPath>..\Build\$(PlatformTarget)_$(Configuration)\</OutputPath>
+		<DefineConstants>TRACE;WPF</DefineConstants>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <None Remove="Resources\cancel.png" />
+	  <None Remove="Resources\compress.png" />
+	  <None Remove="Resources\delete.png" />
+	  <None Remove="Resources\folder.png" />
+	  <None Remove="Resources\newspaper.png" />
+	  <None Include="..\LICENSE.md">
+		  <Pack>True</Pack>
+		  <PackagePath></PackagePath>
+	  </None>
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Resource Include="Resources\cancel.png" />
+	  <Resource Include="Resources\compress.png" />
+	  <Resource Include="Resources\delete.png" />
+	  <Resource Include="Resources\folder.png" />
+	  <Resource Include="Resources\newspaper.png" />
+	  <EmbeddedResource Include="..\LICENSE.md" Link="Resources\LICENSE.md" />
+	</ItemGroup>
+	
+	<ItemGroup>
+		<PackageReference Include="sharpcompress">
+			<Version>0.28.3</Version>
+		</PackageReference>
+	</ItemGroup>
+
+	<Import Project="..\Libraries\Winston\Daramee.Winston.Shared\Daramee.Winston.Shared.projitems" Label="Shared" />
+
+	<Import Project="..\Libraries\FileTypeDetector\Daramee.FileTypeDetector.Shared\Daramee.FileTypeDetector.Shared.projitems" Label="Shared" />
+</Project>

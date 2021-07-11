@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Kalix": {
+      "commandName": "Project",
+      "nativeDebugging": false
+    }
+  }
+}

@@ -1,0 +1,6 @@
+[submodule "Libraries/Winston"]
+	path = Libraries/Winston
+	url = git@github.com:daramkun/Winston.git
+[submodule "Libraries/FileTypeDetector"]
+	path = Libraries/FileTypeDetector
+	url = git@github.com:daramkun/FileTypeDetector.git

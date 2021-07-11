@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31321.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Kalix.Core", "Kalix.Core\Kalix.Core.vcxproj", "{8011CB7C-65BC-49C4-8357-8A6BD7026608}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Kalix", "Kalix\Kalix.csproj", "{14AEFF2C-2D9B-47E0-A25E-831D95C8FC63}"
+	ProjectSection(ProjectDependencies) = postProject
+		{8011CB7C-65BC-49C4-8357-8A6BD7026608} = {8011CB7C-65BC-49C4-8357-8A6BD7026608}
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Kalix Application", "1. Kalix Application", "{5285C791-1ECE-4AD4-B4DF-A3C925F4A815}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. External Libraries", "2. External Libraries", "{86D3A417-B404-4DA0-8A9F-9219463A4169}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Daramee.Winston.Shared", "Libraries\Winston\Daramee.Winston.Shared\Daramee.Winston.Shared.shproj", "{07D3172F-FF1F-4E6F-AEBE-3E725904B2A7}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Daramee.FileTypeDetector.Shared", "Libraries\FileTypeDetector\Daramee.FileTypeDetector.Shared\Daramee.FileTypeDetector.Shared.shproj", "{5E1C88AE-6CCA-430C-8ADB-DE4DE4CE2174}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		Libraries\Winston\Daramee.Winston.Shared\Daramee.Winston.Shared.projitems*{07d3172f-ff1f-4e6f-aebe-3e725904b2a7}*SharedItemsImports = 13
+		Libraries\FileTypeDetector\Daramee.FileTypeDetector.Shared\Daramee.FileTypeDetector.Shared.projitems*{14aeff2c-2d9b-47e0-a25e-831d95c8fc63}*SharedItemsImports = 5
+		Libraries\Winston\Daramee.Winston.Shared\Daramee.Winston.Shared.projitems*{14aeff2c-2d9b-47e0-a25e-831d95c8fc63}*SharedItemsImports = 5
+		Libraries\FileTypeDetector\Daramee.FileTypeDetector.Shared\Daramee.FileTypeDetector.Shared.projitems*{5e1c88ae-6cca-430c-8adb-de4de4ce2174}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8011CB7C-65BC-49C4-8357-8A6BD7026608}.Debug|x64.ActiveCfg = Debug|x64
+		{8011CB7C-65BC-49C4-8357-8A6BD7026608}.Debug|x64.Build.0 = Debug|x64
+		{8011CB7C-65BC-49C4-8357-8A6BD7026608}.Release|x64.ActiveCfg = Release|x64
+		{8011CB7C-65BC-49C4-8357-8A6BD7026608}.Release|x64.Build.0 = Release|x64
+		{14AEFF2C-2D9B-47E0-A25E-831D95C8FC63}.Debug|x64.ActiveCfg = Debug|x64
+		{14AEFF2C-2D9B-47E0-A25E-831D95C8FC63}.Debug|x64.Build.0 = Debug|x64
+		{14AEFF2C-2D9B-47E0-A25E-831D95C8FC63}.Release|x64.ActiveCfg = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8011CB7C-65BC-49C4-8357-8A6BD7026608} = {5285C791-1ECE-4AD4-B4DF-A3C925F4A815}
+		{14AEFF2C-2D9B-47E0-A25E-831D95C8FC63} = {5285C791-1ECE-4AD4-B4DF-A3C925F4A815}
+		{07D3172F-FF1F-4E6F-AEBE-3E725904B2A7} = {86D3A417-B404-4DA0-8A9F-9219463A4169}
+		{5E1C88AE-6CCA-430C-8ADB-DE4DE4CE2174} = {86D3A417-B404-4DA0-8A9F-9219463A4169}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B0A6CD63-99C5-4914-8C0C-E426B380840D}
+	EndGlobalSection
+EndGlobal
