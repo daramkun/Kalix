@@ -243,7 +243,7 @@ namespace Kalix
 		
 		private static void StreamCopy(Stream dest, Stream src)
 		{
-			byte[] copyBuffer = new byte[4096];
+			var copyBuffer = new byte[4096];
 
 			try
 			{

@@ -59,7 +59,7 @@ namespace Kalix
 		private ProcessOptions _processOptions = new()
 		{
 			ResizeFilter = ResizeFilter.Bicubic,
-			MaximumHeight = 8196,
+			MaximumHeight = 12000,
 			UseGrayscale = false,
 			UseGrayscaleOnlyGrayscale = true,
 			UseIndexedColor = false,
@@ -312,7 +312,7 @@ namespace Kalix
 			}
 		}
 		#endregion
-		
+
 		public void Save()
 		{
 			using Stream stream = File.Open($"{AppDomain.CurrentDomain.BaseDirectory}\\Kalix.config.json", FileMode.Create);

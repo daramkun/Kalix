@@ -18,7 +18,7 @@ namespace Kalix
 			if (threadCount <= 0)
 				threadCount = Environment.ProcessorCount;
 
-			CancellationTokenSource doneCondition = new CancellationTokenSource();
+			var doneCondition = new CancellationTokenSource();
 
 			void Executor()
 			{
@@ -39,7 +39,7 @@ namespace Kalix
 
 			while (!queue.IsEmpty)
 			{
-
+				Thread.Yield();
 			}
 
 			doneCondition.Cancel();
